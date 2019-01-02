@@ -3,6 +3,15 @@
 
 This repo has a ton of options, but we're just here for one particular chip: L6470. Rather than mucking through the whole thing to figure out what I can delete, I'll leave all the extras here for now and trim it down later.
 
+### Hardware
+
+1. Raspberry Pi (tested version 3)
+2. EVAL6470H
+
+![](https://github.com/TaylorHokanson/rpidmx512/edit/master/media/wiring.jpg "TBA")
+
+### Software
+
 1. Install and update Raspbian
 2. `sudo raspi-config`
    * Interfacing options
@@ -12,7 +21,9 @@ This repo has a ton of options, but we're just here for one particular chip: L64
 4. Download and extract this repo to the Desktop
 5. cd rpidmx512/lib-l6470/examples/sparkfun
 6. `make`
-7. sudo ./setparam
+7. `sudo ./SetParam`
+   * these settings work for my 2.1A stepper, but YMMV
+8. `sudo ./simple_move`
 
 
 

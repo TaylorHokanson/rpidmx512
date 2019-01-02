@@ -26,12 +26,12 @@ else
 	LDLIBS += -lbcm2835
 endif
 
-all : SparkFunGetSetParamTest simple_move
+all : SparkFunGetSetParamTest simple_move SetParam
 
 clean :
 	rm -f *.o
 	rm -f *.lst
-	rm -f SparkFunGetSetParamTest simple_move
+	rm -f SparkFunGetSetParamTest simple_move SetParam
 	cd $(ROOT)/lib-l6470 && make -f Makefile.Linux clean
 	
 $(ROOT)/lib-l6470/lib_linux/libl6470.a :
@@ -41,4 +41,7 @@ SparkFunGetSetParamTest : Makefile SparkFunGetSetParamTest.cpp $(ROOT)/lib-l6470
 	$(CPP) SparkFunGetSetParamTest.cpp $(INCLUDES) $(COPS) -o SparkFunGetSetParamTest $(LIB) $(LDLIBS)
 	
 simple_move : Makefile simple_move.cpp $(ROOT)/lib-l6470/lib_linux/libl6470.a
-	$(CPP) simple_move.cpp $(INCLUDES) $(COPS) -o simple_move $(LIB) $(LDLIBS)	
+	$(CPP) simple_move.cpp $(INCLUDES) $(COPS) -o simple_move $(LIB) $(LDLIBS)
+
+SetParam : Makefile SetParam.cpp $(ROOT)/lib-l6470/lib_linux/libl6470.a
+	$(CPP) SetParam.cpp $(INCLUDES) $(COPS) -o SetParam $(LIB) $(LDLIBS)	

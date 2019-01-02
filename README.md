@@ -1,5 +1,19 @@
-# Raspberry Pi + L6470 Stepper Motor Control
-## xxx
+# Raspberry Pi + L6470 
+## 3A Stepper Motor Control
+
+This repo has a ton of options, but we're just here for one particular library. Rather than mucking through the whole thing to figure out what I can delete, I'll leave all the extras here for now and trim it down later.
+
+1. Install and update Raspbian
+2. `sudo raspi-config`
+   * Interfacing options
+      * enable SPI
+      * enable SSH
+3. Download and extract this repo to the Desktop
+4. 
+4. cd rpidmx512/lib-l6470/examples/sparkfun
+5. 
+
+
 
 # Orange Pi baremetal
 ## DMX512 / RDM / Art-Net 3 / sACN E1.31 / Pixel controller

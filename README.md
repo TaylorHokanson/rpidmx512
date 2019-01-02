@@ -1,7 +1,7 @@
 # Raspberry Pi + L6470 
 ## 3A RMS Stepper Motor Control
 
-This repo has a ton of options, but we're just here for one particular chip: L6470. Rather than mucking through the whole thing to figure out what I can delete, I'll leave all the extras here for now and trim it down later.
+This repo has a ton of options, but we're just here for one particular chip: L6470. Rather than mucking through the whole thing to figure out what I can delete, I'll leave all the extras here for now and trim it down later. You can find more infomation on my research process and intended application on [my website](http://taylorhokanson.com/2018/12/26/driving-a-higher-amperage-stepper-motor-w-raspberry-pi/).
 
 ### Hardware
 

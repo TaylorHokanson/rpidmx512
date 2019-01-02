@@ -19,7 +19,7 @@ This repo has a ton of options, but we're just here for one particular chip: L64
       * enable SSH
 3. Download and install [this library](http://www.airspayce.com/mikem/bcm2835/)
 4. Download and extract this repo to the Desktop
-5. cd rpidmx512/lib-l6470/examples/sparkfun
+5. `cd /home/pi/Desktop/rpidmx512/lib-l6470/examples/sparkfun`
 6. `make`
 7. `sudo ./SetParam`
    * these settings work for my 2.1A stepper @ 12V, but YMMV

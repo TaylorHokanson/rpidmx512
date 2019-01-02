@@ -8,7 +8,7 @@ This repo has a ton of options, but we're just here for one particular chip: L64
 1. Raspberry Pi (tested version 3)
 2. EVAL6470H
 
-![](https://github.com/TaylorHokanson/rpidmx512/edit/master/media/wiring.jpg "TBA")
+!["wiring"](https://github.com/TaylorHokanson/rpidmx512/blob/master/media/wiring.jpg "wiring")
 
 ### Software
 

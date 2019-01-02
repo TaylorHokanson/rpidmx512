@@ -96,37 +96,32 @@ int main(int argc, char **argv) {
 	// Step Mode
 	// Input Values: 0 - 7
 	// Represents: Full, 1/2, 1/4, 1/8, 1/16, 1/32, 1/64, 1/128 (datasheet pg. 48)
-	board.configStepMode(0);
+	board.configStepMode(2);
 	printf("%s%d\n", "Step Mode: ", board.getStepMode());
 
 	// Min Speed
 	// 0 to 976.3 step/s with a resolution of 0.238 step/s (datasheet pg. 43)
-	//board.setMinSpeed(23.8418788909);
 	board.setMinSpeed(23.8);
 	printf("%s%.1f\n", "Min Speed: ", board.getMinSpeed());
 
 	// Max Speed
 	// 15.25 to 15610 step/s with a resolution of 15.25 step/s (datasheet pg. 43)
-	//board.setMaxSpeed(152.587890625);
-	board.setMaxSpeed(152.5);
+	board.setMaxSpeed(305);
 	printf("%s%.1f\n", "Max Speed: ", board.getMaxSpeed());
 	
 	// Full Speed
 	// 7.63 to 15625 step/s with a resolution of 15.25 step/s (datasheet pg. 44)
-	//board.setFullSpeed(160.21728515625);
-	board.setFullSpeed(152.5);
+	board.setFullSpeed(305);
 	printf("%s%.1f\n", "Full Speed: ", board.getFullSpeed());
 
 	// Acceleration
 	// 14.55 to 59590 step/s2 with a resolution of 14.55 step/s2 (datasheet pg. 42)
-	//board.setAcc(72.76008090920998);
-	board.setAcc(73);
+	board.setAcc(145.5);
 	printf("%s%.2f\n", "Acceleration: ", board.getAcc());
 
 	// Deceleration
 	// 14.55 to 59590 step/s2 with a resolution of 14.55 step/s2 (datasheet pg. 43)
-	//board.setDec(72.76008090920998);
-	board.setDec(73);
+	board.setDec(145.5);
 	printf("%s%.2f\n", "Deceleration: ", board.getDec());
 
 	// Overcurrent Threshold
